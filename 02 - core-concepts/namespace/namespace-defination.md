@@ -47,3 +47,11 @@ To delete a namespace
 ```bash
   kubectl delete namespace dev
 ```
+
+To set another namespace to default
+
+```bash
+  kubectl config set-context $(kubectl config current-context) --namespace=dev
+```
+
+
