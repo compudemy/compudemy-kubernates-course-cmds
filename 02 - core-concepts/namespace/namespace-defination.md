@@ -19,13 +19,13 @@ get All Pods in another namespace
 Create a pod in another namespace
 
 ```bash
-  kubectl get pods -n kube-pubic
+  kubectl run nginx --image=nginx -n kube-pubic
 ```
 
 or
 
 ```bash
-  kubectl get pods --namespace=kube-pubic
+  kubectl run nginx --image=nginx  --namespace=kube-pubic
 ```
 
 Delete a pod in another namespace
