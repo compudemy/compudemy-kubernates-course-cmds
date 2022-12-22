@@ -34,6 +34,11 @@ Delete a pod in another namespace
   kubectl delete pod <pod-name> --namespace=kube-pubic
 ```
 
+To create a namespace
 
+```bash
+  kubectl create -f <defination-file.yaml> --namespace=namespace
+```
 
+where namespace is where we want the resource created e.g dev or kube-pubic
 
