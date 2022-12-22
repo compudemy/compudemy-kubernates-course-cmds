@@ -42,3 +42,8 @@ To create a namespace
 
 where namespace is where we want the resource created e.g dev or kube-pubic
 
+To delete a namespace
+
+```bash
+  kubectl delete namespace dev
+```
