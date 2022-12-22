@@ -16,6 +16,12 @@ get All Pods in another namespace
   kubectl get pods --namespace=kube-system
 ```
 
+get All namespaces
+
+```bash
+  kubectl get pods --all-namespaces
+```
+
 Create a pod in another namespace
 
 ```bash
