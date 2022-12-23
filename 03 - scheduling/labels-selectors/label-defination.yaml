@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-defination
+  labels:
+    app: app-1
+spec:
+  containers:
+    - name: label-defination-cn
+      image: nginx
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+      ports:
+        - containerPort: 5000
