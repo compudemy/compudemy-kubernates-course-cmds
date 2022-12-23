@@ -24,4 +24,9 @@ And then we can do a word count on that
     kubectl get pods --no-headers | wc -l
 ```
 
+Get Pods in multiple environments
+
+```bash
+    kubectl get pods --selector labe1=label-item,label2=label-item
+```
 
