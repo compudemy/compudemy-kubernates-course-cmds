@@ -1,4 +1,4 @@
-Get Pods, filteringg by selector
+Get Pods, filtering by selector
 
 ```bash
     kubectl get pods --selector app=app-1

@@ -1,27 +1,5 @@
-Get Pods, filteringg by selector
+to taint a node we use the following commands
 
 ```bash
-    kubectl get pods --selector app=app-1
+    kubectl taint nodes node1<node-name> app=blue:Noschedule
 ```
-
-Get Count of pods
-
-```bash
-    kubectl get pods | wc -l
-```
-
-The problem with the above command is that it outputs even the header label in the count
-
-to solve this we use the no-headers option
-
-```bash
-    kubectl get pods --no-headers
-```
-
-And then we can do a word count on that
-
-```bash
-    kubectl get pods --no-headers | wc -l
-```
-
-
