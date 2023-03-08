@@ -23,5 +23,11 @@ to generate a yaml file from an imperative cmd
     operator: "Equal"
     value: "value1"
     effect: "NoSchedule"
-
 ```
+
+Remove a taint on a node
+
+```bash
+    kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+```
+

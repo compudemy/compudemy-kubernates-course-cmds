@@ -30,3 +30,9 @@ Get Pods in multiple environments
     kubectl get pods --selector labe1=label-item,label2=label-item
 ```
 
+Add label to a node 
+
+```bash
+    kubectl label node node01 color=blue
+```
+
